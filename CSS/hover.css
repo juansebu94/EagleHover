@@ -1,0 +1,44 @@
+body
+{
+	background: #202020;*/
+	background: white;
+}
+.contenedor
+{
+	overflow: hidden;
+}
+.contenedor .aguila
+{
+	width: 60%;
+	display: block;
+	margin: auto;
+	margin-top: 8%;
+	/*-webkit-transform: scale(1);
+	transform: scale(1)*/;
+/*	-webkit-transition: .6s ease-in-out;*/
+	transition-delay: 0.2s;
+	transition: 2s ease-in-out;
+}
+.contenedor .aguila:hover
+{
+	-webkit-transform: scale(2.2);
+	transform: scale(2.2);
+/*	-webkit-transition: .6s ease-in-out;*/
+	transition-delay: 0.2s;
+	transition: 2s ease-in-out;
+}
+.ojo
+{
+	width: 500px;
+	position: absolute;
+	left: 41%;
+	top: 0;
+	opacity: 0;
+	transform: rotate(70000deg);
+	transition-duration: 8s;
+}
+.contenedor:hover .ojo
+{
+	opacity: 0.95;
+	transform: rotate(0deg);
+}
